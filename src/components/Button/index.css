@@ -1,0 +1,25 @@
+.Button {
+  background: none;
+  border: none;
+  padding: 5px 25px;
+}
+
+.Button.-rounded {
+  border-radius: 25px;
+}
+
+.Button.-primary {
+  background: red;
+}
+
+.Button.-secondary {
+  background: blue;
+}
+
+.Button.-default {
+  background: gray;
+}
+
+.Button.-outlined {
+  border: 2px solid;
+}
