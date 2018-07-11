@@ -1,10 +1,17 @@
-import React from 'react';
-import { render } from 'react-dom';
-import 'sanitize.css';
+import React from "react";
+import { render } from "react-dom";
+import "sanitize.css";
 
-import App from './containers/App';
-import registerServiceWorker from './registerServiceWorker';
+import App from "./containers/App";
+import Routes from "./routes";
+import registerServiceWorker from "./registerServiceWorker";
 
-render(<App />, document.getElementById('root'));
+const Root = () => (
+  <App>
+    <Routes />
+  </App>
+);
+
+render(<Root />, document.getElementById("root"));
 
 registerServiceWorker();
